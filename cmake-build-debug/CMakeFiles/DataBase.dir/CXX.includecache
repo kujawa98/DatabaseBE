@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Kacper/CLionProjects/DataBase/Doctor.cpp
+Doctor.h
+C:/Users/Kacper/CLionProjects/DataBase/Doctor.h
+iostream
+-
+
+C:/Users/Kacper/CLionProjects/DataBase/Doctor.h
+string
+-
+vector
+-
+Person.h
+C:/Users/Kacper/CLionProjects/DataBase/Person.h
+
+C:/Users/Kacper/CLionProjects/DataBase/Person.h
+string
+-
+
+C:/Users/Kacper/CLionProjects/DataBase/main.cpp
+iostream
+-
+Doctor.h
+C:/Users/Kacper/CLionProjects/DataBase/Doctor.h
+
