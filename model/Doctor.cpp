@@ -4,6 +4,9 @@
 
 #include "Doctor.h"
 #include <iostream>
+
+using namespace std;
+
 const string &Doctor::getHospital() const {
     return hospital;
 }
@@ -35,16 +38,38 @@ Doctor::Doctor(const string &name, const string &secondName, const string &hospi
                                                                howManyPatients(
                                                                        howManyPatients) {}
 
-const std::vector<Person> &Doctor::getOpinions() const {
+const vector<Patient> &Doctor::getOpinions() const {
     return opinions;
 }
 
-void Doctor::setMail(const string &mail) {
-    Doctor::mail = mail;
+
+void Doctor::addOpinion() {
+    string name;
+    string secondName;
+    string opinion;
+
+    cout << "Imie" << endl;
+    cin >> name;
+
+    cout << "Nazwisko" << endl;
+    cin >> secondName;
+
+    getchar();
+
+    cout << "Co sadzisz o danym lekarzu?" << endl;
+    getline(cin, opinion);
+
+    Patient patient(name, secondName, opinion);
+    Doctor::opinions.push_back(patient);
+
 }
 
-void Doctor::addOpinion(){
-    Person person("Stanislaw", "Skrillex");
-    Doctor::opinions.push_back(person);
+const string &Doctor::getSpecialization() const {
+    return specialization;
+}
+
+const string Doctor::toString() {
+    const string result = Doctor::mail;
+    return result;
 }
 

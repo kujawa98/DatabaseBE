@@ -80,19 +80,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/Doctor.cpp">
+		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/Database.cpp">
 			<Option target="DataBase"/>
 		</Unit>
-		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/Doctor.h">
+		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/Database.h">
 			<Option target="DataBase"/>
 		</Unit>
-		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/Person.cpp">
+		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.cpp">
 			<Option target="DataBase"/>
 		</Unit>
-		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/Person.h">
+		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.h">
 			<Option target="DataBase"/>
 		</Unit>
-		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/main.cpp">
+		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/model/Patient.cpp">
+			<Option target="DataBase"/>
+		</Unit>
+		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/model/Patient.h">
+			<Option target="DataBase"/>
+		</Unit>
+		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/model/Person.cpp">
+			<Option target="DataBase"/>
+		</Unit>
+		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/model/Person.h">
+			<Option target="DataBase"/>
+		</Unit>
+		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/model/main.cpp">
 			<Option target="DataBase"/>
 		</Unit>
 		<Unit filename="C:/Users/Kacper/CLionProjects/DataBase/CMakeLists.txt">

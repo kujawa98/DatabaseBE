@@ -6,27 +6,43 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Kacper/CLionProjects/DataBase/Doctor.cpp
+C:/Users/Kacper/CLionProjects/DataBase/Database.cpp
+Database.h
+C:/Users/Kacper/CLionProjects/DataBase/Database.h
+
+C:/Users/Kacper/CLionProjects/DataBase/Database.h
+unordered_map
+-
+model/Doctor.h
+C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.h
+
+C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.cpp
 Doctor.h
-C:/Users/Kacper/CLionProjects/DataBase/Doctor.h
+C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.h
 iostream
 -
 
-C:/Users/Kacper/CLionProjects/DataBase/Doctor.h
+C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.h
 string
 -
 vector
 -
-Person.h
-C:/Users/Kacper/CLionProjects/DataBase/Person.h
+Patient.h
+C:/Users/Kacper/CLionProjects/DataBase/model/Patient.h
 
-C:/Users/Kacper/CLionProjects/DataBase/Person.h
+C:/Users/Kacper/CLionProjects/DataBase/model/Patient.h
+string
+-
+Person.h
+C:/Users/Kacper/CLionProjects/DataBase/model/Person.h
+
+C:/Users/Kacper/CLionProjects/DataBase/model/Person.h
 string
 -
 
-C:/Users/Kacper/CLionProjects/DataBase/main.cpp
+C:/Users/Kacper/CLionProjects/DataBase/model/main.cpp
 iostream
 -
 Doctor.h
-C:/Users/Kacper/CLionProjects/DataBase/Doctor.h
+C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.h
 

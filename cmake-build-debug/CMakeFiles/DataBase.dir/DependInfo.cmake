@@ -4,9 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Kacper/CLionProjects/DataBase/Doctor.cpp" "C:/Users/Kacper/CLionProjects/DataBase/cmake-build-debug/CMakeFiles/DataBase.dir/Doctor.cpp.obj"
-  "C:/Users/Kacper/CLionProjects/DataBase/Person.cpp" "C:/Users/Kacper/CLionProjects/DataBase/cmake-build-debug/CMakeFiles/DataBase.dir/Person.cpp.obj"
-  "C:/Users/Kacper/CLionProjects/DataBase/main.cpp" "C:/Users/Kacper/CLionProjects/DataBase/cmake-build-debug/CMakeFiles/DataBase.dir/main.cpp.obj"
+  "C:/Users/Kacper/CLionProjects/DataBase/Database.cpp" "C:/Users/Kacper/CLionProjects/DataBase/cmake-build-debug/CMakeFiles/DataBase.dir/Database.cpp.obj"
+  "C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.cpp" "C:/Users/Kacper/CLionProjects/DataBase/cmake-build-debug/CMakeFiles/DataBase.dir/model/Doctor.cpp.obj"
+  "C:/Users/Kacper/CLionProjects/DataBase/model/Patient.cpp" "C:/Users/Kacper/CLionProjects/DataBase/cmake-build-debug/CMakeFiles/DataBase.dir/model/Patient.cpp.obj"
+  "C:/Users/Kacper/CLionProjects/DataBase/model/Person.cpp" "C:/Users/Kacper/CLionProjects/DataBase/cmake-build-debug/CMakeFiles/DataBase.dir/model/Person.cpp.obj"
+  "C:/Users/Kacper/CLionProjects/DataBase/model/main.cpp" "C:/Users/Kacper/CLionProjects/DataBase/cmake-build-debug/CMakeFiles/DataBase.dir/model/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -8,7 +8,7 @@
 #include <string>
 #include <vector>
 
-#include "Person.h"
+#include "Patient.h"
 
 using std::string;
 
@@ -16,12 +16,13 @@ class Doctor : public Person {
 
 private:
 
+    string specialization;
     string hospital;
     string mail;
     int phoneNumber;
     int ID;
     int howManyPatients;
-    std::vector<Person> opinions;
+    std::vector<Patient> opinions;
 
 public:
     Doctor(const string &name, const string &secondName, const string &hospital, const string &mail, int phoneNumber,
@@ -37,12 +38,13 @@ public:
 
     int getHowManyPatients() const;
 
-    const std::vector<Person> &getOpinions() const;
+    const string &getSpecialization() const;
+
+    const std::vector<Patient> &getOpinions() const;
 
     void addOpinion();
 
-    void setMail(const string &mail);
-
+    const string toString();
 
 };
 

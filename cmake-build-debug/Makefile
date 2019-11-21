@@ -122,86 +122,140 @@ DataBase/fast:
 	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/build
 .PHONY : DataBase/fast
 
-Doctor.obj: Doctor.cpp.obj
+Database.obj: Database.cpp.obj
 
-.PHONY : Doctor.obj
-
-# target to build an object file
-Doctor.cpp.obj:
-	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/Doctor.cpp.obj
-.PHONY : Doctor.cpp.obj
-
-Doctor.i: Doctor.cpp.i
-
-.PHONY : Doctor.i
-
-# target to preprocess a source file
-Doctor.cpp.i:
-	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/Doctor.cpp.i
-.PHONY : Doctor.cpp.i
-
-Doctor.s: Doctor.cpp.s
-
-.PHONY : Doctor.s
-
-# target to generate assembly for a file
-Doctor.cpp.s:
-	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/Doctor.cpp.s
-.PHONY : Doctor.cpp.s
-
-Person.obj: Person.cpp.obj
-
-.PHONY : Person.obj
+.PHONY : Database.obj
 
 # target to build an object file
-Person.cpp.obj:
-	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/Person.cpp.obj
-.PHONY : Person.cpp.obj
+Database.cpp.obj:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/Database.cpp.obj
+.PHONY : Database.cpp.obj
 
-Person.i: Person.cpp.i
+Database.i: Database.cpp.i
 
-.PHONY : Person.i
+.PHONY : Database.i
 
 # target to preprocess a source file
-Person.cpp.i:
-	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/Person.cpp.i
-.PHONY : Person.cpp.i
+Database.cpp.i:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/Database.cpp.i
+.PHONY : Database.cpp.i
 
-Person.s: Person.cpp.s
+Database.s: Database.cpp.s
 
-.PHONY : Person.s
+.PHONY : Database.s
 
 # target to generate assembly for a file
-Person.cpp.s:
-	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/Person.cpp.s
-.PHONY : Person.cpp.s
+Database.cpp.s:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/Database.cpp.s
+.PHONY : Database.cpp.s
 
-main.obj: main.cpp.obj
+model/Doctor.obj: model/Doctor.cpp.obj
 
-.PHONY : main.obj
+.PHONY : model/Doctor.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+model/Doctor.cpp.obj:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/Doctor.cpp.obj
+.PHONY : model/Doctor.cpp.obj
 
-main.i: main.cpp.i
+model/Doctor.i: model/Doctor.cpp.i
 
-.PHONY : main.i
+.PHONY : model/Doctor.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/main.cpp.i
-.PHONY : main.cpp.i
+model/Doctor.cpp.i:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/Doctor.cpp.i
+.PHONY : model/Doctor.cpp.i
 
-main.s: main.cpp.s
+model/Doctor.s: model/Doctor.cpp.s
 
-.PHONY : main.s
+.PHONY : model/Doctor.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/main.cpp.s
-.PHONY : main.cpp.s
+model/Doctor.cpp.s:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/Doctor.cpp.s
+.PHONY : model/Doctor.cpp.s
+
+model/Patient.obj: model/Patient.cpp.obj
+
+.PHONY : model/Patient.obj
+
+# target to build an object file
+model/Patient.cpp.obj:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/Patient.cpp.obj
+.PHONY : model/Patient.cpp.obj
+
+model/Patient.i: model/Patient.cpp.i
+
+.PHONY : model/Patient.i
+
+# target to preprocess a source file
+model/Patient.cpp.i:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/Patient.cpp.i
+.PHONY : model/Patient.cpp.i
+
+model/Patient.s: model/Patient.cpp.s
+
+.PHONY : model/Patient.s
+
+# target to generate assembly for a file
+model/Patient.cpp.s:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/Patient.cpp.s
+.PHONY : model/Patient.cpp.s
+
+model/Person.obj: model/Person.cpp.obj
+
+.PHONY : model/Person.obj
+
+# target to build an object file
+model/Person.cpp.obj:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/Person.cpp.obj
+.PHONY : model/Person.cpp.obj
+
+model/Person.i: model/Person.cpp.i
+
+.PHONY : model/Person.i
+
+# target to preprocess a source file
+model/Person.cpp.i:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/Person.cpp.i
+.PHONY : model/Person.cpp.i
+
+model/Person.s: model/Person.cpp.s
+
+.PHONY : model/Person.s
+
+# target to generate assembly for a file
+model/Person.cpp.s:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/Person.cpp.s
+.PHONY : model/Person.cpp.s
+
+model/main.obj: model/main.cpp.obj
+
+.PHONY : model/main.obj
+
+# target to build an object file
+model/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/main.cpp.obj
+.PHONY : model/main.cpp.obj
+
+model/main.i: model/main.cpp.i
+
+.PHONY : model/main.i
+
+# target to preprocess a source file
+model/main.cpp.i:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/main.cpp.i
+.PHONY : model/main.cpp.i
+
+model/main.s: model/main.cpp.s
+
+.PHONY : model/main.s
+
+# target to generate assembly for a file
+model/main.cpp.s:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/main.cpp.s
+.PHONY : model/main.cpp.s
 
 # Help Target
 help:
@@ -212,15 +266,21 @@ help:
 	@echo ... edit_cache
 	@echo ... DataBase
 	@echo ... rebuild_cache
-	@echo ... Doctor.obj
-	@echo ... Doctor.i
-	@echo ... Doctor.s
-	@echo ... Person.obj
-	@echo ... Person.i
-	@echo ... Person.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Database.obj
+	@echo ... Database.i
+	@echo ... Database.s
+	@echo ... model/Doctor.obj
+	@echo ... model/Doctor.i
+	@echo ... model/Doctor.s
+	@echo ... model/Patient.obj
+	@echo ... model/Patient.i
+	@echo ... model/Patient.s
+	@echo ... model/Person.obj
+	@echo ... model/Person.i
+	@echo ... model/Person.s
+	@echo ... model/main.obj
+	@echo ... model/main.i
+	@echo ... model/main.s
 .PHONY : help
 
 
