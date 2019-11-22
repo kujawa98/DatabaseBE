@@ -28,15 +28,17 @@ int Doctor::getHowManyPatients() const {
 }
 
 Doctor::Doctor(const string &name, const string &secondName, const string &hospital, const string &mail,
-               int phoneNumber, int id, int howManyPatients) : Person(name,
-                                                                      secondName),
-                                                               hospital(hospital),
-                                                               mail(mail),
-                                                               phoneNumber(
-                                                                       phoneNumber),
-                                                               ID(id),
-                                                               howManyPatients(
-                                                                       howManyPatients) {}
+               int phoneNumber, int id, int howManyPatients, const string &specialization) : Person(name,
+                                                                                                    secondName),
+                                                                                             hospital(hospital),
+                                                                                             mail(mail),
+                                                                                             phoneNumber(
+                                                                                                     phoneNumber),
+                                                                                             ID(id),
+                                                                                             howManyPatients(
+                                                                                                     howManyPatients),
+                                                                                             specialization(
+                                                                                                     specialization) {}
 
 const vector<Patient> &Doctor::getOpinions() const {
     return opinions;
@@ -69,7 +71,8 @@ const string &Doctor::getSpecialization() const {
 }
 
 const string Doctor::toString() {
-    const string result = Doctor::mail;
+    const string result =
+            Doctor::getName() + ' ' + Doctor::getSecondName() + ' ' + Doctor::specialization + ' ' + Doctor::hospital;
     return result;
 }
 

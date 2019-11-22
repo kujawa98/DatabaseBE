@@ -9,18 +9,16 @@
 C:/Users/Kacper/CLionProjects/DataBase/Database.cpp
 Database.h
 C:/Users/Kacper/CLionProjects/DataBase/Database.h
-
-C:/Users/Kacper/CLionProjects/DataBase/Database.h
-unordered_map
--
-model/Doctor.h
-C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.h
-
-C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.cpp
-Doctor.h
-C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.h
 iostream
 -
+conio.h
+-
+iomanip
+-
+
+C:/Users/Kacper/CLionProjects/DataBase/Database.h
+model/Doctor.h
+C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.h
 
 C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.h
 string
@@ -39,10 +37,4 @@ C:/Users/Kacper/CLionProjects/DataBase/model/Person.h
 C:/Users/Kacper/CLionProjects/DataBase/model/Person.h
 string
 -
-
-C:/Users/Kacper/CLionProjects/DataBase/model/main.cpp
-iostream
--
-Doctor.h
-C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.h
 

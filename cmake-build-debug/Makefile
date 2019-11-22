@@ -149,6 +149,60 @@ Database.cpp.s:
 	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/Database.cpp.s
 .PHONY : Database.cpp.s
 
+main.obj: main.cpp.obj
+
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+model/DatabaseController.obj: model/DatabaseController.cpp.obj
+
+.PHONY : model/DatabaseController.obj
+
+# target to build an object file
+model/DatabaseController.cpp.obj:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/DatabaseController.cpp.obj
+.PHONY : model/DatabaseController.cpp.obj
+
+model/DatabaseController.i: model/DatabaseController.cpp.i
+
+.PHONY : model/DatabaseController.i
+
+# target to preprocess a source file
+model/DatabaseController.cpp.i:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/DatabaseController.cpp.i
+.PHONY : model/DatabaseController.cpp.i
+
+model/DatabaseController.s: model/DatabaseController.cpp.s
+
+.PHONY : model/DatabaseController.s
+
+# target to generate assembly for a file
+model/DatabaseController.cpp.s:
+	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/DatabaseController.cpp.s
+.PHONY : model/DatabaseController.cpp.s
+
 model/Doctor.obj: model/Doctor.cpp.obj
 
 .PHONY : model/Doctor.obj
@@ -230,33 +284,6 @@ model/Person.cpp.s:
 	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/Person.cpp.s
 .PHONY : model/Person.cpp.s
 
-model/main.obj: model/main.cpp.obj
-
-.PHONY : model/main.obj
-
-# target to build an object file
-model/main.cpp.obj:
-	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/main.cpp.obj
-.PHONY : model/main.cpp.obj
-
-model/main.i: model/main.cpp.i
-
-.PHONY : model/main.i
-
-# target to preprocess a source file
-model/main.cpp.i:
-	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/main.cpp.i
-.PHONY : model/main.cpp.i
-
-model/main.s: model/main.cpp.s
-
-.PHONY : model/main.s
-
-# target to generate assembly for a file
-model/main.cpp.s:
-	$(MAKE) -f CMakeFiles\DataBase.dir\build.make CMakeFiles/DataBase.dir/model/main.cpp.s
-.PHONY : model/main.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -269,6 +296,12 @@ help:
 	@echo ... Database.obj
 	@echo ... Database.i
 	@echo ... Database.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
+	@echo ... model/DatabaseController.obj
+	@echo ... model/DatabaseController.i
+	@echo ... model/DatabaseController.s
 	@echo ... model/Doctor.obj
 	@echo ... model/Doctor.i
 	@echo ... model/Doctor.s
@@ -278,9 +311,6 @@ help:
 	@echo ... model/Person.obj
 	@echo ... model/Person.i
 	@echo ... model/Person.s
-	@echo ... model/main.obj
-	@echo ... model/main.i
-	@echo ... model/main.s
 .PHONY : help
 
 

@@ -56,18 +56,18 @@ include CMakeFiles/DataBase.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DataBase.dir/flags.make
 
-CMakeFiles/DataBase.dir/model/main.cpp.obj: CMakeFiles/DataBase.dir/flags.make
-CMakeFiles/DataBase.dir/model/main.cpp.obj: ../model/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Kacper\CLionProjects\DataBase\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataBase.dir/model/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataBase.dir\model\main.cpp.obj -c C:\Users\Kacper\CLionProjects\DataBase\model\main.cpp
+CMakeFiles/DataBase.dir/main.cpp.obj: CMakeFiles/DataBase.dir/flags.make
+CMakeFiles/DataBase.dir/main.cpp.obj: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Kacper\CLionProjects\DataBase\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataBase.dir/main.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataBase.dir\main.cpp.obj -c C:\Users\Kacper\CLionProjects\DataBase\main.cpp
 
-CMakeFiles/DataBase.dir/model/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataBase.dir/model/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Kacper\CLionProjects\DataBase\model\main.cpp > CMakeFiles\DataBase.dir\model\main.cpp.i
+CMakeFiles/DataBase.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataBase.dir/main.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Kacper\CLionProjects\DataBase\main.cpp > CMakeFiles\DataBase.dir\main.cpp.i
 
-CMakeFiles/DataBase.dir/model/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataBase.dir/model/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Kacper\CLionProjects\DataBase\model\main.cpp -o CMakeFiles\DataBase.dir\model\main.cpp.s
+CMakeFiles/DataBase.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataBase.dir/main.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Kacper\CLionProjects\DataBase\main.cpp -o CMakeFiles\DataBase.dir\main.cpp.s
 
 CMakeFiles/DataBase.dir/model/Doctor.cpp.obj: CMakeFiles/DataBase.dir/flags.make
 CMakeFiles/DataBase.dir/model/Doctor.cpp.obj: ../model/Doctor.cpp
@@ -121,27 +121,42 @@ CMakeFiles/DataBase.dir/Database.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataBase.dir/Database.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Kacper\CLionProjects\DataBase\Database.cpp -o CMakeFiles\DataBase.dir\Database.cpp.s
 
+CMakeFiles/DataBase.dir/model/DatabaseController.cpp.obj: CMakeFiles/DataBase.dir/flags.make
+CMakeFiles/DataBase.dir/model/DatabaseController.cpp.obj: ../model/DatabaseController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Kacper\CLionProjects\DataBase\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DataBase.dir/model/DatabaseController.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataBase.dir\model\DatabaseController.cpp.obj -c C:\Users\Kacper\CLionProjects\DataBase\model\DatabaseController.cpp
+
+CMakeFiles/DataBase.dir/model/DatabaseController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataBase.dir/model/DatabaseController.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Kacper\CLionProjects\DataBase\model\DatabaseController.cpp > CMakeFiles\DataBase.dir\model\DatabaseController.cpp.i
+
+CMakeFiles/DataBase.dir/model/DatabaseController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataBase.dir/model/DatabaseController.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Kacper\CLionProjects\DataBase\model\DatabaseController.cpp -o CMakeFiles\DataBase.dir\model\DatabaseController.cpp.s
+
 # Object files for target DataBase
 DataBase_OBJECTS = \
-"CMakeFiles/DataBase.dir/model/main.cpp.obj" \
+"CMakeFiles/DataBase.dir/main.cpp.obj" \
 "CMakeFiles/DataBase.dir/model/Doctor.cpp.obj" \
 "CMakeFiles/DataBase.dir/model/Person.cpp.obj" \
 "CMakeFiles/DataBase.dir/model/Patient.cpp.obj" \
-"CMakeFiles/DataBase.dir/Database.cpp.obj"
+"CMakeFiles/DataBase.dir/Database.cpp.obj" \
+"CMakeFiles/DataBase.dir/model/DatabaseController.cpp.obj"
 
 # External object files for target DataBase
 DataBase_EXTERNAL_OBJECTS =
 
-DataBase.exe: CMakeFiles/DataBase.dir/model/main.cpp.obj
+DataBase.exe: CMakeFiles/DataBase.dir/main.cpp.obj
 DataBase.exe: CMakeFiles/DataBase.dir/model/Doctor.cpp.obj
 DataBase.exe: CMakeFiles/DataBase.dir/model/Person.cpp.obj
 DataBase.exe: CMakeFiles/DataBase.dir/model/Patient.cpp.obj
 DataBase.exe: CMakeFiles/DataBase.dir/Database.cpp.obj
+DataBase.exe: CMakeFiles/DataBase.dir/model/DatabaseController.cpp.obj
 DataBase.exe: CMakeFiles/DataBase.dir/build.make
 DataBase.exe: CMakeFiles/DataBase.dir/linklibs.rsp
 DataBase.exe: CMakeFiles/DataBase.dir/objects1.rsp
 DataBase.exe: CMakeFiles/DataBase.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Kacper\CLionProjects\DataBase\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable DataBase.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Kacper\CLionProjects\DataBase\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable DataBase.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DataBase.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

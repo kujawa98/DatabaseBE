@@ -5,12 +5,30 @@
 #ifndef DATABASE_DATABASE_H
 #define DATABASE_DATABASE_H
 
-#include <unordered_map>
 #include "model/Doctor.h"
 
 class Database {
 private:
-    std::unordered_multimap<string, Doctor> map;
+    std::vector<Doctor> doctors;
+    int latestID = 0;
+
+    void addDoctor();
+
+    void deleteDoctor();
+
+    void editDoctorsData();
+
+    std::vector<Doctor> searchDoctor();
+
+    std::vector<Doctor> searchSpecialist();
+
+    void printOptions();
+
+    void printDoctors();
+
+public:
+    void runDatabase();
+
 };
 
 

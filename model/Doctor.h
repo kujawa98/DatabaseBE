@@ -26,7 +26,7 @@ private:
 
 public:
     Doctor(const string &name, const string &secondName, const string &hospital, const string &mail, int phoneNumber,
-           int id, int howManyPatients);
+           int id, int howManyPatients, const string& specialization);
 
     const string &getHospital() const;
 
