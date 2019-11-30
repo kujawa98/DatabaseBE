@@ -13,3 +13,11 @@ const std::string &Person::getSecondName() const {
 }
 
 Person::Person(const std::string &name, const std::string &secondName) : name(name), secondName(secondName) {}
+
+void Person::setName(const std::string &name) {
+    Person::name = name;
+}
+
+void Person::setSecondName(const std::string &secondName) {
+    Person::secondName = secondName;
+}

@@ -7,43 +7,6 @@
 
 using namespace std;
 
-const string &Doctor::getHospital() const {
-    return hospital;
-}
-
-const string &Doctor::getMail() const {
-    return mail;
-}
-
-int Doctor::getPhoneNumber() const {
-    return phoneNumber;
-}
-
-int Doctor::getId() const {
-    return ID;
-}
-
-int Doctor::getHowManyPatients() const {
-    return howManyPatients;
-}
-
-Doctor::Doctor(const string &name, const string &secondName, const string &hospital, const string &mail,
-               int phoneNumber, int id, int howManyPatients, const string &specialization) : Person(name,
-                                                                                                    secondName),
-                                                                                             hospital(hospital),
-                                                                                             mail(mail),
-                                                                                             phoneNumber(
-                                                                                                     phoneNumber),
-                                                                                             ID(id),
-                                                                                             howManyPatients(
-                                                                                                     howManyPatients),
-                                                                                             specialization(
-                                                                                                     specialization) {}
-
-const vector<Patient> &Doctor::getOpinions() const {
-    return opinions;
-}
-
 
 void Doctor::addOpinion() {
     string name;
@@ -66,13 +29,79 @@ void Doctor::addOpinion() {
 
 }
 
+
+const string Doctor::toString() {
+    string result =
+            Doctor::getName() + ' ' + Doctor::getSecondName() + ' ' + Doctor::specialization + ' ' + Doctor::hospital;
+    for (int i = 0; i < result.length(); i++) {
+        result[i] = std::tolower(result[i]);
+    }
+    return result;
+}
+
+
+//Settery
+void Doctor::setSpecialization(const string &specialization) {
+    Doctor::specialization = specialization;
+}
+
+void Doctor::setHospital(const string &hospital) {
+    Doctor::hospital = hospital;
+}
+
+void Doctor::setMail(const string &mail) {
+    Doctor::mail = mail;
+}
+
+void Doctor::setPhoneNumber(const string &phoneNumber) {
+    Doctor::phoneNumber = phoneNumber;
+}
+
+void Doctor::setHowManyPatients(int howManyPatients) {
+    Doctor::howManyPatients = howManyPatients;
+}
+
+
+//Gettery
 const string &Doctor::getSpecialization() const {
     return specialization;
 }
 
-const string Doctor::toString() {
-    const string result =
-            Doctor::getName() + ' ' + Doctor::getSecondName() + ' ' + Doctor::specialization + ' ' + Doctor::hospital;
-    return result;
+const string &Doctor::getHospital() const {
+    return hospital;
 }
+
+const string &Doctor::getMail() const {
+    return mail;
+}
+
+const string &Doctor::getPhoneNumber() const {
+    return phoneNumber;
+}
+
+const string &Doctor::getId() const {
+    return ID;
+}
+
+int Doctor::getHowManyPatients() const {
+    return howManyPatients;
+}
+
+const vector<Patient> &Doctor::getOpinions() const {
+    return opinions;
+}
+
+Doctor::Doctor(const string &name, const string &secondName, const string &specialization, const string &hospital,
+               const string &mail, const string &phoneNumber, const string &id, int howManyPatients) : Person(name,
+                                                                                                              secondName),
+                                                                                                       specialization(
+                                                                                                               specialization),
+                                                                                                       hospital(
+                                                                                                               hospital),
+                                                                                                       mail(mail),
+                                                                                                       phoneNumber(
+                                                                                                               phoneNumber),
+                                                                                                       ID(id),
+                                                                                                       howManyPatients(
+                                                                                                               howManyPatients) {}
 

@@ -13,6 +13,9 @@ CMakeFiles/DataBase.dir/main.cpp.obj
  C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.h
  C:/Users/Kacper/CLionProjects/DataBase/model/Patient.h
  C:/Users/Kacper/CLionProjects/DataBase/model/Person.h
+CMakeFiles/DataBase.dir/model/DatabaseController.cpp.obj
+ C:/Users/Kacper/CLionProjects/DataBase/model/DatabaseController.cpp
+ C:/Users/Kacper/CLionProjects/DataBase/model/DatabaseController.h
 CMakeFiles/DataBase.dir/model/Doctor.cpp.obj
  C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.cpp
  C:/Users/Kacper/CLionProjects/DataBase/model/Doctor.h

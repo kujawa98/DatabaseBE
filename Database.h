@@ -6,6 +6,7 @@
 #define DATABASE_DATABASE_H
 
 #include "model/Doctor.h"
+#include <map>
 
 class Database {
 private:
@@ -18,13 +19,17 @@ private:
 
     void editDoctorsData();
 
-    std::vector<Doctor> searchDoctor();
+    std::multimap<int, Doctor> searchDoctor();
 
     std::vector<Doctor> searchSpecialist();
+
+    std::vector<string> tokenizeSearch();
 
     void printOptions();
 
     void printDoctors();
+
+    void printData();
 
 public:
     void runDatabase();

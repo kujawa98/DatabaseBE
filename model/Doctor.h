@@ -19,32 +19,42 @@ private:
     string specialization;
     string hospital;
     string mail;
-    int phoneNumber;
-    int ID;
+    string phoneNumber;
+    string ID;
     int howManyPatients;
     std::vector<Patient> opinions;
 
 public:
-    Doctor(const string &name, const string &secondName, const string &hospital, const string &mail, int phoneNumber,
-           int id, int howManyPatients, const string& specialization);
+    Doctor(const string &name, const string &secondName, const string &specialization, const string &hospital,
+           const string &mail, const string &phoneNumber, const string &id, int howManyPatients);
+
+    const string &getSpecialization() const;
 
     const string &getHospital() const;
 
     const string &getMail() const;
 
-    int getPhoneNumber() const;
+    const string &getPhoneNumber() const;
 
-    int getId() const;
+    const string &getId() const;
 
     int getHowManyPatients() const;
-
-    const string &getSpecialization() const;
 
     const std::vector<Patient> &getOpinions() const;
 
     void addOpinion();
 
     const string toString();
+
+    void setSpecialization(const string &specialization);
+
+    void setHospital(const string &hospital);
+
+    void setMail(const string &mail);
+
+    void setPhoneNumber(const string &phoneNumber);
+
+    void setHowManyPatients(int howManyPatients);
 
 };
 

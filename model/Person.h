@@ -20,6 +20,10 @@ public:
     const std::string &getName() const;
 
     const std::string &getSecondName() const;
+
+    void setName(const std::string &name);
+
+    void setSecondName(const std::string &secondName);
 };
 
 
