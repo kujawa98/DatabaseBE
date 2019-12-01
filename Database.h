@@ -21,13 +21,13 @@ private:
 
     std::multimap<int, Doctor> searchDoctor();
 
-    std::vector<Doctor> searchSpecialist();
+    std::vector<Doctor> searchSpecialistMinQueue();
 
-    std::vector<string> tokenizeSearch();
+    std::vector<string> tokenizeSearch(string &search);
 
     void printOptions();
 
-    void printDoctors();
+    void printDoctors(std::vector<Doctor> doctors);
 
     void printData();
 

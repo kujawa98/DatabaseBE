@@ -5,7 +5,6 @@
 #include "Database.h"
 
 #include <iostream>
-#include <conio.h>
 #include <iomanip>
 #include <map>
 
@@ -16,7 +15,7 @@ void Database::runDatabase() {
     cout << "Witaj w bazie danych! Co chcesz zrobic?" << endl;
     while (option != 'q') {
         printOptions();
-        option = getch();
+        option = getchar();
         getchar();
         switch (option) {
             case 'a':
@@ -28,12 +27,16 @@ void Database::runDatabase() {
             case 'd':
                 deleteDoctor();
                 break;
-            case 'q':
-                cout << "Wyjscie z bazy" << endl;
-                break;
             case 's':
                 cout << "Szukaj doktora" << endl;
                 searchDoctor();
+                break;
+            case 'p':
+                cout << "Szukaj specjalisty z najmniejsza kolejka" << endl;
+                printDoctors(searchSpecialistMinQueue());
+                break;
+            case 'q':
+                cout << "Wyjscie z bazy" << endl;
                 break;
             default:
                 cout << "Nieznana opcja" << endl;
@@ -45,26 +48,46 @@ void Database::runDatabase() {
 std::multimap<int, Doctor> Database::searchDoctor() {
     std::multimap<int, Doctor> highestMatch;
     string searchString;
-    getchar();
+    //getchar();
     getline(cin, searchString);
+    std::vector<string> tokens = tokenizeSearch(searchString);
     for (int i = 0; i < doctors.size(); i++) {
         int match = 0;
-        if (doctors[i].toString().find(searchString) != string::npos) {
-            match++;
+        for (size_t j = 0; j < tokens.size(); j++) {
+            if (doctors[i].toString().find(tokens[j]) != string::npos) {
+                match++;
+            }
         }
         highestMatch.insert(pair<int, Doctor>(match, doctors[i]));
         std::multimap<int, Doctor>::iterator itr;
         for (itr = highestMatch.begin(); itr != highestMatch.end(); ++itr) {
-            cout << itr->first << ' ' << (itr->second).toString()<<endl;
+            cout << itr->first << ' ' << (itr->second).toString() << endl;
         }
     }
 
     return highestMatch;
 }
 
-std::vector<Doctor> Database::searchSpecialist() {
-
-    return std::vector<Doctor>();
+std::vector<Doctor> Database::searchSpecialistMinQueue() {
+    std::vector<Doctor> minQueueDoctors;
+    if (!doctors.size()) {
+        cout << "Baza jest pusta" << endl;
+        return minQueueDoctors;
+    }
+    size_t minQueueIndex = 0;
+    string specialization;
+    cout << "Jakiego specjalisty poszukujesz: " << endl;
+    cin >> specialization;
+    getchar();
+    for (size_t i = 0; i < doctors.size(); ++i) {
+        if (specialization.compare(doctors[i].getSpecialization()) == 0) {
+            if (doctors[minQueueIndex].getHowManyPatients() >= doctors[i].getHowManyPatients()) {
+                minQueueIndex = i;
+                minQueueDoctors.insert(minQueueDoctors.begin(), doctors[minQueueIndex]);
+            }
+        }
+    }
+    return minQueueDoctors;
 }
 
 void Database::addDoctor() {
@@ -98,7 +121,7 @@ void Database::addDoctor() {
     cout << "Ilosc pacjentow lekarza: " << endl;
     cin >> howManyPatients;
 
-
+    getchar();
     ID = latestID++;
     Doctor doctor(name, secondName, specialization, hostpital, mail, phoneNumber, ID, howManyPatients);
     doctors.push_back(doctor);
@@ -107,9 +130,10 @@ void Database::addDoctor() {
 void Database::deleteDoctor() {
     if (!doctors.empty()) {
         cout << "Kogo chcesz usunac z bazy? Wybierz odpowiednia opcje" << endl;
-        printDoctors();
+        printDoctors(doctors);
         int deletedDoctorIndex;
         cin >> deletedDoctorIndex;
+        getchar();
         if (deletedDoctorIndex > doctors.size()) {
             return;
         }
@@ -123,7 +147,7 @@ void Database::deleteDoctor() {
 void Database::editDoctorsData() {
     if (!doctors.empty()) {
         cout << "Czyje dane chcesz edytować? Wybierz odpowiednia opcje" << endl;
-        printDoctors();
+        printDoctors(doctors);
         int doctorToeditIndex;
         cin >> doctorToeditIndex;
         if (doctorToeditIndex > doctors.size()) {
@@ -178,14 +202,15 @@ void Database::editDoctorsData() {
                 break;
             }
         }
-        printDoctors();
+        getchar();
+        printDoctors(doctors);
     } else {
         cout << "W bazie nia ma zadnego lekarza" << endl;
     }
 }
 
-void Database::printDoctors() {
-    for (int i = 0; i < doctors.size(); i++) {
+void Database::printDoctors(std::vector<Doctor> doctors) {
+    for (size_t i = 0; i < doctors.size(); i++) {
         cout << i + 1 << " " << doctors[i].toString() << endl;
     }
     cout << endl;
@@ -202,14 +227,22 @@ void Database::printData() {
 }
 
 void Database::printOptions() {
-    cout << "1. Dodanie lekarza do bazy - wybierz 'a'" << endl;
-    cout << "2. Wyjscie z bazy - wybierz 'q'" << endl;
-    cout << "3. Usuniecie lekarza z bazy - wybierz 'd'" << endl;
-    cout << "4. Edytowanie danych lekarza - wybierz 'e'" << endl;
+    cout << "Dodanie lekarza do bazy - wybierz 'a'" << endl;
+    cout << "Wyjscie z bazy - wybierz 'q'" << endl;
+    cout << "Usuniecie lekarza z bazy - wybierz 'd'" << endl;
+    cout << "Edytowanie danych lekarza - wybierz 'e'" << endl;
 }
 
-std::vector<string> Database::tokenizeSearch() {
+std::vector<string> Database::tokenizeSearch(string &search) {
+    std::vector<string> tokens;
+    size_t lastSpace = 0;
+    for (size_t i = 0; i < search.size(); ++i) {
+        if (search[i] == ' ') {
+            tokens.push_back(search.substr(lastSpace, i));
+            lastSpace = i + 1;
+        }
+    }
+    tokens.push_back(search.substr(lastSpace, search.npos));
 
-
-    return std::vector<string>();
+    return tokens;
 }

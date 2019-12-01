@@ -17,18 +17,9 @@
       <change beforePath="$PROJECT_DIR$/Database.h" beforeDir="false" afterPath="$PROJECT_DIR$/Database.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/Database.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/Database.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/model/Doctor.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/model/Doctor.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/model/Patient.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/model/Patient.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/model/Person.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/model/Person.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataBase.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataBase.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DataBase.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Doctor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/model/Doctor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Doctor.h" beforeDir="false" afterPath="$PROJECT_DIR$/model/Doctor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Person.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/model/Person.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Person.h" beforeDir="false" afterPath="$PROJECT_DIR$/model/Person.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/Windows/System32/cmd.exe" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -106,6 +98,9 @@
       <workItem from="1574727670152" duration="138000" />
       <workItem from="1574900125167" duration="675000" />
       <workItem from="1574965386874" duration="410000" />
+      <workItem from="1575124358321" duration="455000" />
+      <workItem from="1575147564922" duration="1269000" />
+      <workItem from="1575185789024" duration="7930000" />
     </task>
     <servers />
   </component>
@@ -124,5 +119,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Database.cpp</url>
+          <line>51</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
